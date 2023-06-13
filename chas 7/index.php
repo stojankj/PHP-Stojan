@@ -125,11 +125,12 @@
         
         echo "<hr>";
 
-        $temp = [78, 60, 62, 68, 71, 68, 73, 85, 66, 76, 63, 75, 76, 73, 68, 73, 72, 65, 74, 65, 68, 73, 75, 79, 73];
-        arsort($temp);
-        print_r($temp);
+        $temperatura = [78, 60, 62, 68, 71, 68, 73, 85, 66, 76, 63, 75, 76, 73, 68, 73, 72, 65, 74, 65, 68, 73, 75, 79, 73];
+        arsort($temperatura);
+        $values = array_values($temperatura);
+        print_r($temperatura);
         for ($x = 0; $x < 5; $x++) { 
-            echo $temp[$x] . ',';
+            echo $values[$x] . ',';
         }  
        
     ?>
